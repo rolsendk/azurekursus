@@ -1,0 +1,4 @@
+# New-AzResourceGroupDeployment -Name "DeployFromPowerShell" -ResourceGroupName "kursus" -TemplateFile .\SqlServer.json  
+
+Og med parameters fil:
+New-AzResourceGroupDeployment -Name "DeployFromPowerShell" -ResourceGroupName "kursus" -TemplateParameterFile .\parameters.json -TemplateFile .\template.json

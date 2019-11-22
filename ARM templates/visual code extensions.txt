@@ -1,0 +1,1 @@
+Brug Visual Code, med extensions 'ARM' (ARM support for Visual Studio Code) og 'Azure Resource Manager (ARM) Tools'
