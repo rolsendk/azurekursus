@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "name": "[concat('sqlserver-',resourceGroup().name)]",
+      "type": "Microsoft.Sql/servers",
+      "location": "[resourceGroup().location]",    
+      "apiVersion": "2014-04-01",
+      "properties": {
+        "administratorLogin": "roldti",
+        "administratorLoginPassword": "teknologiskPassword11",
+        "version": "12.0"
+      },
+      "resources": [
+                {                    
+                    "condition": true,
+                    "apiVersion": "2014-04-01-preview",
+                    "dependsOn": [
+                        "[concat('sqlserver-',resourceGroup().name)]"
+                    ],
+                    "location": "[resourceGroup().location]",
+                    "name": "AllowAllWindowsAzureIps",
+                    "properties": {
+                        "endIpAddress": "0.0.0.0",
+                        "startIpAddress": "0.0.0.0"
+                    },
+                    "type": "firewallrules"
+                }
+        ]
+    }
+  ]
+}
