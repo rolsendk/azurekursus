@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kursusmateriale", "Kursusma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teknologisk.ActiveDirectory", "Teknologisk.ActiveDirectory\Teknologisk.ActiveDirectory.csproj", "{C65ED062-7885-4765-A8C6-FA81DD03B5D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teknologisk.StorageQueue", "Teknologisk.StorageQueue\Teknologisk.StorageQueue.csproj", "{CA55D108-1EC3-43AA-A855-95115675D81F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{C65ED062-7885-4765-A8C6-FA81DD03B5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C65ED062-7885-4765-A8C6-FA81DD03B5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C65ED062-7885-4765-A8C6-FA81DD03B5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA55D108-1EC3-43AA-A855-95115675D81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA55D108-1EC3-43AA-A855-95115675D81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA55D108-1EC3-43AA-A855-95115675D81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA55D108-1EC3-43AA-A855-95115675D81F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

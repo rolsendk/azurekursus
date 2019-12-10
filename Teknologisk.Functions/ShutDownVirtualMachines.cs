@@ -12,7 +12,7 @@ namespace Teknologisk.Functions
     public static class ShutDownVirtualMachines
     {
         [FunctionName("ShutDownVirtualMachines")]
-        public static void Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 1 * * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
